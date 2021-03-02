@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/TrainingReactScrimba/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/TrainingReactScrimba/static/js/main.71c9a929.chunk.js",
+    "main.js.map": "/TrainingReactScrimba/static/js/main.71c9a929.chunk.js.map",
+    "runtime-main.js": "/TrainingReactScrimba/static/js/runtime-main.3ff27e13.js",
+    "runtime-main.js.map": "/TrainingReactScrimba/static/js/runtime-main.3ff27e13.js.map",
+    "static/js/2.b37d7bec.chunk.js": "/TrainingReactScrimba/static/js/2.b37d7bec.chunk.js",
+    "static/js/2.b37d7bec.chunk.js.map": "/TrainingReactScrimba/static/js/2.b37d7bec.chunk.js.map",
+    "static/js/3.1dbc0b97.chunk.js": "/TrainingReactScrimba/static/js/3.1dbc0b97.chunk.js",
+    "static/js/3.1dbc0b97.chunk.js.map": "/TrainingReactScrimba/static/js/3.1dbc0b97.chunk.js.map",
+    "index.html": "/TrainingReactScrimba/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/TrainingReactScrimba/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.b37d7bec.chunk.js.LICENSE.txt": "/TrainingReactScrimba/static/js/2.b37d7bec.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/TrainingReactScrimba/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3ff27e13.js",
+    "static/js/2.b37d7bec.chunk.js",
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.71c9a929.chunk.js"
+  ]
+}
