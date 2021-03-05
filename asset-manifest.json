@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/TrainingReactScrimba/static/css/main.04f49070.chunk.css",
-    "main.js": "/TrainingReactScrimba/static/js/main.7dfccbfe.chunk.js",
-    "main.js.map": "/TrainingReactScrimba/static/js/main.7dfccbfe.chunk.js.map",
+    "main.js": "/TrainingReactScrimba/static/js/main.4199f8f6.chunk.js",
+    "main.js.map": "/TrainingReactScrimba/static/js/main.4199f8f6.chunk.js.map",
     "runtime-main.js": "/TrainingReactScrimba/static/js/runtime-main.3ff27e13.js",
     "runtime-main.js.map": "/TrainingReactScrimba/static/js/runtime-main.3ff27e13.js.map",
     "static/js/2.b37d7bec.chunk.js": "/TrainingReactScrimba/static/js/2.b37d7bec.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.3ff27e13.js",
     "static/js/2.b37d7bec.chunk.js",
     "static/css/main.04f49070.chunk.css",
-    "static/js/main.7dfccbfe.chunk.js"
+    "static/js/main.4199f8f6.chunk.js"
   ]
 }
