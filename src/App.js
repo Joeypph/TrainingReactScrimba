@@ -11,18 +11,30 @@ function App(){
     const date = new Date()
     const hours = date.getHours()
     let timeOfDay
+
+    const luz = {
+      fontSize: 30,
+    }
     
     if (hours < 12) {
       timeOfDay = "morning"
-    } else if (hours >= 12 && hours <= 19) {
+      luz.color = "#04756F"
+      luz.backgroundColor = "#FF2D00"
+
+    } else if (hours >= 12 && hours < 17) {
       timeOfDay = "afternoon"
+      luz.color = "#8914A3"
+      luz.backgroundColor = "#008000"
     } else {
       timeOfDay = "night"
+      luz.color = "#D90000"
+      luz.backgroundColor = "#FFC0CB"
     }
+
 
     return(
         //<h1>Hello {firstName + " " + lastName}!</h1>
-        <h1>Good {timeOfDay}!</h1>
+        <h1 style={luz}>Good {timeOfDay}!</h1>
 
         /*<div>
             <NavBar/>
