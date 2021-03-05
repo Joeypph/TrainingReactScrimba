@@ -4,6 +4,7 @@ import React from "react"
 import NavBar from "./components/NavBar"
 import MainContent from "./components/MainContent"
 import Footer from "./components/Footer"
+import TodoItem from "./components/TodoItem"
 
 function App(){
     /*const firstName = "Bob"
@@ -31,14 +32,18 @@ function App(){
       luz.backgroundColor = "#FFC0CB"
     }
     return(
+
+      <div className="todo-list">
+        <TodoItem/>
+      </div>
         //<h1>Hello {firstName + " " + lastName}!</h1>
 
-        <div>
+        /*<div>
           <h1 style={luz}>Good {timeOfDay}!</h1>          
             <NavBar/>
             <MainContent />
             <Footer/>
-        </div>
+        </div>*/
         
         /*<div>
             <input type="checkbox" name="chb1" />
