@@ -30,17 +30,15 @@ function App(){
       luz.color = "#D90000"
       luz.backgroundColor = "#FFC0CB"
     }
-
-
     return(
         //<h1>Hello {firstName + " " + lastName}!</h1>
-        <h1 style={luz}>Good {timeOfDay}!</h1>
 
-        /*<div>
+        <div>
+          <h1 style={luz}>Good {timeOfDay}!</h1>          
             <NavBar/>
-            <MainContent/>
+            <MainContent />
             <Footer/>
-        </div>*/
+        </div>
         
         /*<div>
             <input type="checkbox" name="chb1" />
