@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+
 // From scratch, initialize the React app
 // Render an <App /> component
 // Create the <App /> component from scratch
