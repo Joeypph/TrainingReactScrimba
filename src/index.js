@@ -11,9 +11,7 @@ import reportWebVitals from './reportWebVitals';
 // Have the <App /> component render 3 or 4 checkboxes with paragraphs or spans next to it
 // like you're making a todo list with some hard-coded items on it
 
-ReactDOM.render(
-  <React.StrictMode><App /></React.StrictMode>,document.getElementById('root')
-);
+ReactDOM.render(<React.StrictMode><App /></React.StrictMode>,document.getElementById('root'));
 
 
 
