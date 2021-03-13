@@ -20,14 +20,9 @@ import vschoolProducts from "./vschoolProducts"
     )
 }*/
 function App() {
-    const productComponents = vschoolProducts.map((product)=>{
+    const productComponents = vschoolProducts.map((item)=>{
         return(
-            <Product 
-                key={product.id} 
-                name={product.name}
-                price={product.price}
-                description={product.description}
-            />
+            <Product key={item.id} product={item}/>
         )
     })
   return (

@@ -4,9 +4,9 @@ function Product(prop) {
     console.log(prop)
   return (
     <div className ="todo-list">
-        <h1>Name:{prop.name}</h1>
-        <h1>Price: {prop.price}</h1>
-        <h1>Description: {prop.description}</h1>
+            <h2>{prop.product.name}</h2>
+            <p>{prop.product.price.toLocaleString("en-US", { style: "currency", currency: "USD" })} 
+            - {prop.product.description}</p>
         <break/>
         <hr/>
     </div>
