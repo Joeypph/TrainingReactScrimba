@@ -1,34 +1,15 @@
 import React from "react"
 
-function TodoItem(){
-    
+function TodoItem(props){
     const stylediv={
         background:"#FFC0CB",
-
     }
     return(
-        <div>
-            <div style={stylediv} className="todo-item">
-                <input type="checkbox" />
-                <p className="myparaf">Placeholder text here</p>
-            </div>
-            
-            <div style={stylediv} className="todo-item">
-                <input type="checkbox" />
-                <p className="myparaf" >Placeholder text here</p>            
-            </div>
-            
-            <div style={stylediv} className="todo-item">
-                <input type="checkbox" />
-                <p className="myparaf">Placeholder text here</p>           
-            </div>
-
-            
-            <div style={stylediv} className="todo-item">
-                <input type="checkbox" />
-                <p className="myparaf">Placeholder text here</p>            
-            </div>
+         <div  className="todo-item">
+            <input type="checkbox"  checked={props.item.completed}/>
+            <p className="myparaf">{props.item.text}</p>
         </div>
+
     )
 }
 export default TodoItem

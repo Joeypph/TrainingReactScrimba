@@ -1,13 +1,18 @@
 import './App.css';
 
 import React from "react"
-import Joke from   "./components/Joke"
-import jokesData from "./jokesData"
-import Product from "./components/Product"
-import vschoolProducts from "./vschoolProducts"
+import todosData from "./todosData"
+import TodoItem from "./components/TodoItem"
+//import Joke from   "./components/Joke"
+//import jokesData from "./jokesData"
+//import Product from "./components/Product"
+//import vschoolProducts from "./vschoolProducts"
+
 
 //joke function
-/*function App(){
+/*functi Aonpp(){
+
+
     const jokeComponents = jokesData.map( (joke) =>{
         return(
             <Joke key={joke.id} question={joke.question} punchline={joke.question}/>
@@ -19,6 +24,7 @@ import vschoolProducts from "./vschoolProducts"
         </div>     
     )
 }*/
+/*function app for product
 function App() {
     const productComponents = vschoolProducts.map((item)=>{
         return(
@@ -30,5 +36,18 @@ function App() {
         {productComponents}
     </div>
   )
+}*/
+function  App() {
+    const todoItems = todosData.map((item=>{
+        return(
+            <TodoItem key={item.id} item={item}/>
+        )
+    }))
+    return(
+        <div className="todo-list">
+            {todoItems}
+        </div>
+    )
+    
 }
 export default App
