@@ -1,8 +1,9 @@
 import './App.css';
 
 import React from "react"
-import todosData from "./todosData"
-import TodoItem from "./components/TodoItem"
+import { render } from '@testing-library/react';
+//import todosData from "./todosData"
+//import TodoItem from "./components/TodoItem"
 //import Joke from   "./components/Joke"
 //import jokesData from "./jokesData"
 //import Product from "./components/Product"
@@ -36,7 +37,7 @@ function App() {
         {productComponents}
     </div>
   )
-}*/
+}
 function  App() {
     const todoItems = todosData.map((item=>{
         return(
@@ -49,7 +50,7 @@ function  App() {
         </div>
     )
     
-}
+}*/
 /* start using class based Components
 class App extends React.Component {
     
@@ -65,5 +66,50 @@ class App extends React.Component {
         )
     }
 }*/
+
+//Class-based Components Practice
+
+// #1
+class App extends React.Component{
+    render(){
+        return (
+            <div>
+                <Header username="Joeypph"/>
+                <Greeting />
+            </div>
+        )
+    }
+}
+
+// #2
+class  Header extends React.Component {
+    render(){
+        return (
+            <header>
+                <p>Welcome, {this.props.username}!</p>
+            </header>
+        )
+    }
+}
+
+// #3
+class Greeting extends React.Component {
+    render(){
+        const date = new Date()
+        const hours = date.getHours()
+        let timeOfDay
+        
+        if (hours < 12) {
+            timeOfDay = "morning"
+        } else if (hours >= 12 && hours < 17) {
+            timeOfDay = "afternoon"
+        } else {
+            timeOfDay = "night"
+        }
+        return (
+            <h1>Good {timeOfDay} to you, sir or madam!</h1>
+        )
+    }
+}
 
 export default App
