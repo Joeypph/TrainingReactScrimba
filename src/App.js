@@ -65,7 +65,7 @@ class App extends React.Component {
             </div>
         )
     }
-}*/
+}
 
 //Class-based Components Practice
 
@@ -108,6 +108,21 @@ class Greeting extends React.Component {
         }
         return (
             <h1>Good {timeOfDay} to you, sir or madam!</h1>
+        )
+    }
+}*/
+class App extends React.Component{
+    constructor(){
+        super()
+        this.state={
+            answer:"yes,perro"
+        }
+    }
+    render(){
+        return(
+            <div>
+                <h1>Is state important to know?{this.state.answer}</h1>
+            </div>
         )
     }
 }
