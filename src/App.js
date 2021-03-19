@@ -1,6 +1,6 @@
 import './App.css';
 
-import React from "react"
+import React, {Component} from "react"
 import { render } from '@testing-library/react';
 //import todosData from "./todosData"
 //import TodoItem from "./components/TodoItem"
@@ -125,7 +125,7 @@ class App extends React.Component{
             </div>
         )
     }
-}*/
+}
 
 // Challenge:
 // Given an incomplete class-based component without a constructor, 
@@ -144,6 +144,35 @@ class App extends React.Component{
                   <h1>{this.state.name}</h1>
                   <h3>{this.state.age}</h3>
               </div>
+        )   
+    }
+}*/
+
+
+// Given a stateless functional component, add state to it
+// state should have a property called `isLoggedIn` which is a boolean
+// (true if logged in, false if not)
+// Then, give your best shot at rendering the word "in" if the user is logged in
+// or "out" if the user is logged out.
+
+class App extends Component {
+    constructor() {
+        super()
+        this.state = {
+            isLoggedIn: true
+        }
+    }
+    render() {
+        let wordDisplay
+        if (this.state.isLoggedIn){
+            wordDisplay="in"
+        }else{
+            wordDisplay="out"
+        }
+        return (
+            <div>
+                <h1>You are currently logged {wordDisplay}</h1>
+            </div>
         )
     }
 }
