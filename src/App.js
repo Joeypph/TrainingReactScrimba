@@ -110,7 +110,7 @@ class Greeting extends React.Component {
             <h1>Good {timeOfDay} to you, sir or madam!</h1>
         )
     }
-}*/
+}
 class App extends React.Component{
     constructor(){
         super()
@@ -121,8 +121,29 @@ class App extends React.Component{
     render(){
         return(
             <div>
-                <h1>Is state important to know?{this.state.answer}</h1>
+                <h1>Is state important to know?{this.state.a}</h1>
             </div>
+        )
+    }
+}*/
+
+// Challenge:
+// Given an incomplete class-based component without a constructor, 
+// add a constructor and initialize state to fix the broken component.
+class App extends React.Component{
+    constructor( ){
+        super()
+        this.state={
+            name:"José",
+            age:"16"
+        }
+    }
+    render() {
+        return(
+              <div>
+                  <h1>{this.state.name}</h1>
+                  <h3>{this.state.age}</h3>
+              </div>
         )
     }
 }
