@@ -1,9 +1,9 @@
 import './App.css';
 
 import React, {Component} from "react"
-import { render } from '@testing-library/react';
-//import todosData from "./todosData"
-//import TodoItem from "./components/TodoItem"
+
+import todosData from "./todosData"
+import TodoItem from "./components/TodoItem"
 //import Joke from   "./components/Joke"
 //import jokesData from "./jokesData"
 //import Product from "./components/Product"
@@ -155,7 +155,7 @@ class App extends React.Component{
 // Then, give your best shot at rendering the word "in" if the user is logged in
 // or "out" if the user is logged out.
 
-class App extends Component {
+/*class App extends Component {
     constructor() {
         super()
         this.state = {
@@ -174,6 +174,22 @@ class App extends Component {
                 <h1>You are currently logged {wordDisplay}</h1>
             </div>
         )
+    }
+}*/
+class App extends Component {
+    constructor(){
+        super()
+        this.state={
+            todos:todosData
+        }
+    }
+        render(){
+            const todoItems = this.state.todos.map(item => <TodoItem key={item.id} item={item}/>)
+            return (
+                <div className="todo-list">
+                    {todoItems}
+                </div>
+        )   
     }
 }
 
