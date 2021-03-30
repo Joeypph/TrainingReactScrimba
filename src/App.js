@@ -2,8 +2,8 @@ import './App.css';
 
 import React, {Component} from "react"
 
-import todosData from "./todosData"
-import TodoItem from "./components/TodoItem"
+//import todosData from "./todosData"
+//import TodoItem from "./components/TodoItem"
 //import Joke from   "./components/Joke"
 //import jokesData from "./jokesData"
 //import Product from "./components/Product"
@@ -175,7 +175,7 @@ class App extends React.Component{
             </div>
         )
     }
-}*/
+}
 class App extends Component {
     constructor(){
         super()
@@ -191,6 +191,20 @@ class App extends Component {
                 </div>
         )   
     }
+}*/
+function handleClick() {
+    console.log("I was clicked")
+    
+}
+function App() {
+    return(
+        <div>
+            <img onMouseOver ={()=>console.log("Im hovering")} src="https://www.fillmurray.com/200/100"/>
+            <br />
+            <br />
+            <button onClick={handleClick}>Click me</button>
+    </div>
+    )
 }
 
 export default App
