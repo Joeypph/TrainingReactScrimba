@@ -2,8 +2,8 @@ import './App.css';
 
 import React, {Component} from "react"
 
-import todosData from "./todosData"
-import TodoItem from "./components/TodoItem"
+//import todosData from "./todosData"
+//import TodoItem from "./components/TodoItem"
 //import Joke from   "./components/Joke"
 //import jokesData from "./jokesData"
 //import Product from "./components/Product"
@@ -176,7 +176,7 @@ class App extends React.Component{
         )
     }
 }*/
-class App extends Component {
+/*class App extends Component {
     constructor(){
         super()
         this.state={
@@ -191,7 +191,7 @@ class App extends Component {
                 </div>
         )   
     }
-}
+}*/
 /*
 function handleClick() {
     console.log("I was clicked")
@@ -208,4 +208,52 @@ function App() {
     )
 }*/
 
+class App extends Component{
+    constructor(){
+        super()
+        this.state={
+            count: 0
+        }
+        this.handleClick= this.handleClick.bind(this)
+        this.handleClick2= this.handleClick2.bind(this)
+        this.setCounter= this.setCounter.bind(this)
+    }
+    handleClick(){
+        this.setState(prevState=>{
+            return{
+                count: prevState.count + 1
+            }
+        })
+    }
+    handleClick2(){
+        this.setState(prevState=>{
+            return{
+                count: prevState.count * 2
+            }
+        })
+    }
+    setCounter(){
+        this.setState(prevState=>{
+            return{
+                count: prevState.count = 0
+            }
+        })
+    }
+    render() {
+        return(
+            <div>
+                <div>
+                    <h1>{this.state.count}</h1>
+                </div>
+                    <button onClick={this.handleClick}>Change by 1!</button>
+                <div>
+                    <button onClick={this.handleClick2}>Change times 2!</button>
+                </div>
+                <div >
+                    <button onClick={this.setCounter}>Set to 0 the counter </button>               
+                </div>
+            </div>
+        )
+    }
+}
 export default App
