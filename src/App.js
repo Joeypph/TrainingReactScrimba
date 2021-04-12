@@ -1,8 +1,9 @@
 import './App.css';
 
 import React from "react"
-import TodoItem from "./components/TodoItem"
-import todosData from "./todosData"
+import randomColor from "randomcolor"
+//import TodoItem from "./components/TodoItem"
+//import todosData from "./todosData"
 
 //import Joke from   "./components/Joke"
 //import jokesData from "./jokesData"
@@ -206,26 +207,28 @@ function App() {
             <button onClick={handleClick}>Click me</button>
     </div>
     )
-}
+}*/
 
-class App extends Component{
+class App extends React.Component{
     constructor(){
         super()
         this.state={
-            count: 0
+            count: 0,
+            color: " "
         }
-        this.handleClick= this.handleClick.bind(this)
-        this.handleClick2= this.handleClick2.bind(this)
+        this.Increment= this.Increment.bind(this)
+        this.Decrement= this.Decrement.bind(this)
         this.setCounter= this.setCounter.bind(this)
+
     }
-    handleClick(){
+    Increment(){
         this.setState(prevState=>{
             return{
                 count: prevState.count + 1
             }
         })
     }
-    handleClick2(){
+    Decrement(){
         this.setState(prevState=>{
             return{
                 count: prevState.count * 2
@@ -239,15 +242,23 @@ class App extends Component{
             }
         })
     }
+    //it could be easy to  color: randmColor() to every state,but what if we have more tha 1 state? thats when lifecyles saved us, cause we don´t need to c/p that
+    //line to every state,you just do it ones!!
+    componentDidUpdate(prevProps, prevState) {
+        if(prevState.count !== this.state.count) {
+            const newColor = randomColor()
+            this.setState({color: newColor})
+        }
+    }
     render() {
         return(
             <div>
                 <div>
-                    <h1>{this.state.count}</h1>
+                    <h1 style={{color: this.state.color}}>{this.state.count}</h1>
                 </div>
-                    <button onClick={this.handleClick}>Change by 1!</button>
+                    <button onClick={this.Increment}>Change by 1!</button>
                 <div>
-                    <button onClick={this.handleClick2}>Change times 2!</button>
+                    <button onClick={this.Decrement}>Change times 2!</button>
                 </div>
                 <div >
                     <button onClick={this.setCounter}>Set to 0 the counter </button>               
@@ -255,9 +266,9 @@ class App extends Component{
             </div>
         )
     }
-}*/
+}
 
-class App extends React.Component {
+/*class App extends React.Component {
     constructor() {
         super()
         this.state = {
@@ -293,6 +304,6 @@ class App extends React.Component {
             </div>
         )    
     }
-}
+}*/
 
 export default App
