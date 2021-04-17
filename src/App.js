@@ -2,6 +2,8 @@ import './App.css';
 
 import React from "react"
 import randomColor from "randomcolor"
+import Conditional from "./components/Conditional"
+import { render } from '@testing-library/react';
 //import TodoItem from "./components/TodoItem"
 //import todosData from "./todosData"
 
@@ -209,7 +211,7 @@ function App() {
     )
 }*/
 
-class App extends React.Component{
+/*class App extends React.Component{
     constructor(){
         super()
         this.state={
@@ -266,7 +268,7 @@ class App extends React.Component{
             </div>
         )
     }
-}
+}*/
 
 /*class App extends React.Component {
     constructor() {
@@ -305,5 +307,29 @@ class App extends React.Component{
         )    
     }
 }*/
+
+class App extends React.Component{
+    constructor(){
+        super()
+        this.state={
+            isLoading:true
+        }
+        
+    }
+    componentDidMount(){
+        setTimeout(()=>{
+            this.setState({
+                isLoading:false
+            })
+        },1500)
+    }
+    render(){
+        return(
+            <div>
+                {this.state.isLoading ?<h1>Loading...</h1>: <Conditional/>}
+            </div>
+        )
+    }    
+}
 
 export default App
