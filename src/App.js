@@ -308,7 +308,7 @@ function App() {
     }
 }*/
 
-class App extends React.Component{
+/*class App extends React.Component{
     constructor(){
         super()
         this.state={
@@ -330,6 +330,27 @@ class App extends React.Component{
             </div>
         )
     }    
+}*/
+class App extends React.Component {
+    constructor() {
+        super()
+        this.state = {
+            unreadMessages: ["a"]
+        }
+    }
+    // &&
+    // false && false
+    render() {
+        return (
+            <div>
+                {
+                    this.state.unreadMessages.length > 0 && 
+                    <h2>You have {this.state.unreadMessages.length} unread messages!</h2>
+                }
+            </div>
+        )
+    }
 }
+
 
 export default App
