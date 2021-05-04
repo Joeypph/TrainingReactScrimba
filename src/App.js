@@ -2,47 +2,39 @@ import './App.css';
 
 import React from "react"
 import randomColor from "randomcolor"
-import Conditional from "./components/Conditional"
-import TodoItem from "./components/TodoItem"
-import todosData from "./todosData"
 
-import { render } from '@testing-library/react';
 
-class App extends React.Component {
-    constructor() {
+
+class App extends React.Component{
+    constructor(){
         super()
-        this.state = {
-            todos: todosData
+        this.state={
+            loading: false,
+            character:{}
         }
-        this.handleChange = this.handleChange.bind(this)
+
     }
-    
-    handleChange(id) {
-        this.setState(prevState => {
-            const updatedTodos = prevState.todos.map(todo => {
-                if (todo.id === id) {
-                    return {
-                        ... todo,completed: !todo.completed
-                    }
-                }
-                return todo
-               
+    componentDidMount(){
+        this.setState({loading: true})
+        //use fetch (global function)
+        fetch("https://swapi.dev/api/people/1")
+        //resolve the promise}
+        .then(response =>
+            response.json())
+        .then(data =>{
+            this.setState({
+                character: data,
+                loading:false
             })
-            return {
-                todos: updatedTodos
-            }
-          
         })
     }
-    
-    render() {
-        const todoItems = this.state.todos.map(item => <TodoItem key={item.id} item={item} handleChange={this.handleChange}/>)
-        
-        return (
-            <div className="todo-list">
-                {todoItems}
+    render(){
+        const text = this.state.loading ? "loading..." : this.state.character.name
+        return(
+            <div>
+                <p>{text}</p>
             </div>
-        )    
+        )
     }
 }
 export default App
