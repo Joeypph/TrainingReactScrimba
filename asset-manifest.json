@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/TrainingReactScrimba/static/css/main.816f932d.chunk.css",
-    "main.js": "/TrainingReactScrimba/static/js/main.9e572921.chunk.js",
-    "main.js.map": "/TrainingReactScrimba/static/js/main.9e572921.chunk.js.map",
-    "runtime-main.js": "/TrainingReactScrimba/static/js/runtime-main.73271e23.js",
-    "runtime-main.js.map": "/TrainingReactScrimba/static/js/runtime-main.73271e23.js.map",
-    "static/js/2.c768c5ff.chunk.js": "/TrainingReactScrimba/static/js/2.c768c5ff.chunk.js",
-    "static/js/2.c768c5ff.chunk.js.map": "/TrainingReactScrimba/static/js/2.c768c5ff.chunk.js.map",
-    "static/js/3.dca069be.chunk.js": "/TrainingReactScrimba/static/js/3.dca069be.chunk.js",
-    "static/js/3.dca069be.chunk.js.map": "/TrainingReactScrimba/static/js/3.dca069be.chunk.js.map",
+    "main.js": "/TrainingReactScrimba/static/js/main.b4caba24.chunk.js",
+    "main.js.map": "/TrainingReactScrimba/static/js/main.b4caba24.chunk.js.map",
+    "runtime-main.js": "/TrainingReactScrimba/static/js/runtime-main.33884de2.js",
+    "runtime-main.js.map": "/TrainingReactScrimba/static/js/runtime-main.33884de2.js.map",
+    "static/js/2.f769a4cf.chunk.js": "/TrainingReactScrimba/static/js/2.f769a4cf.chunk.js",
+    "static/js/2.f769a4cf.chunk.js.map": "/TrainingReactScrimba/static/js/2.f769a4cf.chunk.js.map",
+    "static/js/3.66de8b20.chunk.js": "/TrainingReactScrimba/static/js/3.66de8b20.chunk.js",
+    "static/js/3.66de8b20.chunk.js.map": "/TrainingReactScrimba/static/js/3.66de8b20.chunk.js.map",
     "index.html": "/TrainingReactScrimba/index.html",
     "static/css/main.816f932d.chunk.css.map": "/TrainingReactScrimba/static/css/main.816f932d.chunk.css.map",
-    "static/js/2.c768c5ff.chunk.js.LICENSE.txt": "/TrainingReactScrimba/static/js/2.c768c5ff.chunk.js.LICENSE.txt"
+    "static/js/2.f769a4cf.chunk.js.LICENSE.txt": "/TrainingReactScrimba/static/js/2.f769a4cf.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.73271e23.js",
-    "static/js/2.c768c5ff.chunk.js",
+    "static/js/runtime-main.33884de2.js",
+    "static/js/2.f769a4cf.chunk.js",
     "static/css/main.816f932d.chunk.css",
-    "static/js/main.9e572921.chunk.js"
+    "static/js/main.b4caba24.chunk.js"
   ]
 }
