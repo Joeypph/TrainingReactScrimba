@@ -37,9 +37,7 @@ class App extends React.Component {
                     placeholder="First Name" 
                     onChange={this.handleChange}>
                   </input>
-
                   <br />
-
                   <input 
                     type = "text" 
                     name="lastName" 
