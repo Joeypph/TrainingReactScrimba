@@ -388,6 +388,38 @@ Given a stateless functional component:
         )
     }
 }*/
+/*class App extends React.Component{
+    constructor(){
+        super()
+        this.state={
+            loading: false,
+            character:{}
+        }
+
+    }
+    componentDidMount(){
+        this.setState({loading: true})
+        //use fetch (global function)
+        fetch("https://swapi.dev/api/people/1")
+        //resolve the promise}
+        .then(response =>
+            response.json())
+        .then(data =>{
+            this.setState({
+                character: data,
+                loading:false
+            })
+        })
+    }
+    render(){
+        const text = this.state.loading ? "loading..." : this.state.character.name
+        return(
+            <div>
+                <p>{text}</p>
+            </div>
+        )
+    }
+}*/
 
 /*import TodoItem from "./components/TodoItem"
 import todosData from "./todosData"
